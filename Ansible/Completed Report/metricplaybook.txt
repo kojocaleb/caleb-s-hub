@@ -1,0 +1,49 @@
+[WARNING]: ansible.utils.display.initialize_locale has not been called, this may result in incorrectly calculated text widths that can
+cause Display to print incorrect line lengths
+
+PLAY [Installing and Launch Metricbeat] ****************************************************************************************************
+
+TASK [Gathering Facts] *********************************************************************************************************************
+ok: [10.0.0.7]
+ok: [10.0.0.6]
+ok: [10.0.0.5]
+
+TASK [Download metricbeat .deb file] *******************************************************************************************************
+changed: [10.0.0.5]
+changed: [10.0.0.6]
+changed: [10.0.0.7]
+
+TASK [Install metricbeat .deb] *************************************************************************************************************
+changed: [10.0.0.7]
+changed: [10.0.0.6]
+changed: [10.0.0.5]
+
+TASK [Drop in metricbeat.yml] **************************************************************************************************************
+ok: [10.0.0.7]
+ok: [10.0.0.6]
+ok: [10.0.0.5]
+
+TASK [Enable and Configure System Module] **************************************************************************************************
+changed: [10.0.0.7]
+changed: [10.0.0.6]
+changed: [10.0.0.5]
+
+TASK [Setup metricbeat] ********************************************************************************************************************
+changed: [10.0.0.6]
+changed: [10.0.0.5]
+changed: [10.0.0.7]
+
+TASK [Start metricbeat service] ************************************************************************************************************
+changed: [10.0.0.6]
+changed: [10.0.0.5]
+changed: [10.0.0.7]
+
+TASK [Enable service metricbeat on boot] ***************************************************************************************************
+ok: [10.0.0.7]
+ok: [10.0.0.6]
+ok: [10.0.0.5]
+
+PLAY RECAP *********************************************************************************************************************************
+10.0.0.5                   : ok=8    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+10.0.0.6                   : ok=8    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+10.0.0.7                   : ok=8    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
