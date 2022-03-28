@@ -1,0 +1,1 @@
+Configure Elk Stack server in order to set up a cloud based monitoring system. This results in the provision of tangible deliveraies for cloud, network security, logging and monitoring. 
